@@ -1,0 +1,208 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <style>
+    html,
+    body {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav {
+      background-color: #0288d1;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+
+    .nav-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .li-list {
+      float: left;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: white;
+      padding: 9px 12px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: white;
+      color: #0288d1;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #0288d1;
+      width: 160px;
+
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      padding: 0;
+    }
+
+    .dropdown-content li {
+      list-style: none;
+      width: 100%;
+      display: inline-block;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 4px 6px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      border-bottom: 1px dotted white;
+      /*position:relative;*/
+    }
+
+    .dropdown-content a:hover {
+      background-color: white;
+    }
+
+    .dropdown:hover>.dropdown-content,
+    .dropdown-content .dropdown:hover>.dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content .dropdown>.dropdown-content {
+      left: 100%;
+      top: 0;
+    }
+
+    footer {
+      color: white;
+      background-color: #0288d1;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 50px;
+      width: 100%;
+      top: 100%;
+      display: inline-block;
+      position: absolute;
+    }
+  </style>
+  <title>Proyecto de sitio Web 2021 - II</title>
+</head>
+
+<body style="margin: 0">
+  <!--Navbar desplegable-->
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="li-list"><a href="#" class="active">Inicio</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Recursos Digitales</a>
+        <div class="dropdown-content">
+          <a href="#">Recurso 1</a>
+          <a href="#">Recurso 2</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Aprendizaje</a>
+        <div class="dropdown-content">
+          <a href="#">Actividad 1</a>
+          <a href="#">Actividad 2</a>
+        </div>
+      </li>
+      <li class="li-list"><a href="#" class="active">Acerca de</a></li>
+    </ul>
+  </nav>
+  <div style="margin: 15px;">
+    <section>
+      <h4 style="color: black">
+        El proposito de esta pagina es fomentar el aprendizaje por medio de una
+        pagina web.
+      </h4>
+    </section>
+    <article>
+      <div>
+        <h3>¿Qué es una etiqueta HTML?</h3>
+        <p>
+          Una etiqueta HTML es una etiqueta que se utiliza para definir una parte
+          de un documento HTML.
+          Cuando escribes código en HTML, estás escribiendo etiquetas HTML. Todas las etiquetas HTML están hechas con un
+          número de partes específicas, incluyendo:
+        <ul>
+          <li>
+            El carácter “menor que” < </li>
+          <li>
+            Una palabra o carácter que determina qué etiqueta se está escribiendo
+          </li>
+          <li>
+            Cualquier número de atributos HTML que se quiera usar, escritos de la forma nombre =”valor”
+          </li>
+          <li>
+            El carácter “mayor que” >
+          </li>
+        </ul>
+        &nbsp <a href="https://www.iebschool.com/blog/que-es-etiqueta-html-analitica-usabilidad/">(2021). Recuperado 4
+          de
+          noviembre de 2021, de https://www.iebschool.com/blog/que-es-etiqueta-html-analitica-usabilidad/ <a>
+            </p>
+      </div>
+    </article>
+    <article>
+      <div>
+        <h3>Atributos html</h3>
+        <p>
+          Para añadir el atributo, bastará con que lo introduzcas en la propia etiqueta de inicio del elemento HTML en
+          cuestión. Un ejemplo sería el siguiente, donde vamos a añadir el atributo «id» a una etiqueta div:
+        </p>
+        <code>&lt;div id="nombre"&gt;&lt;/div&gt;</code>
+        <p>
+          En este caso, el atributo sería «id="nombre"».
+        </p>
+        &nbsp <a href="https://carontestudio.com/blog/atributos-html/">(2021). Recuperado 4 de
+          noviembre de 2021, de https://carontestudio.com/blog/atributos-html/ <a>
+      </div>
+      <br>
+      <div style="display: inline-block;">
+        <img src="atributos.jpg" alt="HTML5" style="width: 250px; height: 200px;"><img>
+        <img src="etiquetashtml.png" alt="HTML5" style="width: 400px; height: 200px;"><img>
+      </div>
+    </article>
+    <h3>Mockup </h3>
+    <img src="mackup.png"> </img>
+  </div>
+
+  <footer class="Footer">
+    <div style="display: inline-block;">
+      <p>
+        @Tutor
+        &nbsp
+        &nbsp
+        <span id="datetime"></span>
+      </p>
+      <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+      </script>
+    </div>
+  </footer>
+</body>
+
+</html>
