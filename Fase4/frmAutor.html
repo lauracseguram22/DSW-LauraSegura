@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Proyecto de sitio Web 2021 - II</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!--Navbar desplegable-->
+    <div style="display: flex; flex-direction: column; height: 100%;; width: 100%;">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="li-list"><a href="index.html">Inicio</a></li>
+                <li class="li-list"><a href="frmTemas.html">Temas</a></li>
+                <li class="li-list"><a href="frmRecursosDigitales.html">Recursos Digitales</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Aprendizaje</a>
+                    <div class="dropdown-content">
+                        <a href="#">Actividad 1</a>
+                        <a href="#">Actividad 2</a>
+                    </div>
+                </li>
+                <li class="li-list"><a href="#">Autor</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex;flex-direction: column; flex: 1; padding: 10px;">
+            <div class="card" style="align-self: center; background-color: rgb(252, 228, 236) ;">
+                <img src="LauraCamila.jpg" width="200px" height="200px"
+                    style="align-items: center; display: block; margin-left: auto; margin-right: auto; border-radius: 20px;">
+                <div class="container">
+                    <h2>Laura Camila Segura Molina</h2>
+                    <p>
+                        <b>Codigo:</b> 1006509823<br>
+                        <b>Carrera:</b> Ingeniería de sistemas<br>
+                        <b>Correo:</b> lauracamila2041@gmail.com<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="Footer">
+            <div style="display: inline-block;">
+                <p>
+                    @josue8atorres
+                    &nbsp
+                    &nbsp
+                    <span id="datetime"></span>
+                </p>
+                <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                </script>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

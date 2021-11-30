@@ -1,0 +1,197 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <style>
+    html,
+    body {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav {
+      background-color: #0288d1;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+
+    .nav-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .li-list {
+      float: left;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: white;
+      padding: 9px 12px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: white;
+      color: #0288d1;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #0288d1;
+      width: 160px;
+
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      padding: 0;
+    }
+
+    .dropdown-content li {
+      list-style: none;
+      width: 100%;
+      display: inline-block;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 4px 6px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      border-bottom: 1px dotted white;
+      /*position:relative;*/
+    }
+
+    .dropdown-content a:hover {
+      background-color: white;
+    }
+
+    .dropdown:hover>.dropdown-content,
+    .dropdown-content .dropdown:hover>.dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content .dropdown>.dropdown-content {
+      left: 100%;
+      top: 0;
+    }
+
+    footer {
+      color: white;
+      background-color: #0288d1;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+      width: 100%;
+      bottom: 0px;
+      display: inline-block;
+      position: relative;
+    }
+  </style>
+  <title>Proyecto de sitio Web 2021 - II</title>
+</head>
+
+<body>
+  <div style="display: flex; flex-direction: column; height: 100%; width: 100%">
+    <!--Navbar desplegable-->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="li-list"><a href="#">Inicio</a></li>
+        <li class="li-list"><a href="frmTemas.html">Temas</a></li>
+        <li class="li-list">
+          <a href="frmRecursosDigitales.html">Recursos Digitales</a>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Aprendizaje</a>
+          <div class="dropdown-content">
+            <a href="#">Actividad 1</a>
+            <a href="#">Actividad 2</a>
+          </div>
+        </li>
+        <li class="li-list"><a href="frmAutor.html">Autor</a></li>
+      </ul>
+    </nav>
+    <div style="display: flex; flex-direction: column; flex: 1; padding: 10px">
+      <div>
+        <h3>Propósito</h3>
+        <p>
+          El siguiente sitio web tiene como fin orientar Temas basicos como
+          los son las etiquetas de html y los atributos que estas pueden
+          llevar.
+        </p>
+      </div>
+      <div>
+        <h3>Introducción</h3>
+        <p>
+          En el siguiente sitio vamos a encontrar algunos terminos basicos
+          como lo son las etiquetas html, atributos y valores, todo esto con
+          el fin de mostrarlo en una pagina web hecha desde 0, donde el
+          objetivo principal es elaborar recursos educativos digitales para
+          dinamizar las estrategias de aprendizaje.
+        </p>
+      </div>
+      <div>
+        <img src="imagen1.jpg" alt="HTML5" style="width: 250px; height: 200px"> </img>
+        <img src="imagen2.jpg" alt="HTML5" style="width: 350px; height: 200px"> </img>
+        <img src="imagen3.png" alt="HTML5" style="width: 400px; height: 200px"> </img>
+      </div>
+      <div>
+        <h3>Referencias</h3>
+        <ul>
+          <li>
+            <a style="color: black" href=" https://websgalicia.es/blog/etiquetas-html/">
+              (2021). Recuperado 10 de noviembre de 2021, de https://websgalicia.es/blog/etiquetas-html/
+            </a>
+          </li>
+          <li>
+            <a style="color: black;" href="https://disenowebakus.net/domine-html-y-dhtml-primeros-pasos.php">
+              (2021). Recuperado 10 de noviembre de 2021, de
+              https://disenowebakus.net/domine-html-y-dhtml-primeros-pasos.php
+            </a>
+          </li>
+          <li>
+            <a style="color: black;"
+              href="(2021). Recuperado 10 de noviembre de 2021, de https://lenguajehtml.com/html/introduccion/estructura-etiqueta-html/ ">
+              (2021). Recuperado 10 de noviembre de 2021, de
+              https://lenguajehtml.com/html/introduccion/estructura-etiqueta-html/
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="Footer">
+      <div style="display: inline-block">
+        <p>
+          @josue8atorres &nbsp &nbsp
+          <span id="datetime"></span>
+        </p>
+        <script>
+          var dt = new Date();
+          document.getElementById("datetime").innerHTML =
+            dt.toLocaleDateString();
+        </script>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
