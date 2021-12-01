@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Proyecto de sitio Web 2021 - II</title>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <div style="display: flex; flex-direction: column; height: 100vh">
+        <!--Navbar desplegable-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="frmTemas.html">Temas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="frmRecursosDigitales.html">Recursos Digitales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="frmAutor.html">Autor</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Aprendizaje
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="frmAprendizaje1.html">Actividad 1</a></li>
+                                <li><a class="dropdown-item" href="#">Actividad 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="content" style="flex: 1; display: flex; flex-direction: column;">
+            <iframe style="flex: 1;"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSc4nepbaygywo4fXoWOD06Sv6-DSgxDTNLpnA0Cu1d34aLXEg/viewform?embedded=true"
+                width="100%" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+
+        </div>
+
+        <!-- Footer-->
+        <footer id="footer" class="bg-primary" style="align-items: flex-end">
+            <div class="container px-4">
+                <p class="m-2 text-center text-white">
+                <p>
+                    @josue8atorres
+                    &nbsp
+                    &nbsp
+                    <span id="datetime"></span>
+                </p>
+                <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                </script>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
